@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header{
+    background-color: #fff462;
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header .logo img {
+    height: 5rem;
+}
+
+.active-link {
+    text-decoration: none;
+    color:white ;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;  
+    border-radius: 0.25rem;  
+}
+
+header .links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.625rem 1.25rem ;
+    font-size: 1rem;
+    transition: .2s;
+    font-weight: 700;
+    border-radius: 0.25rem;  
+
+    
+}
+
+header .links a:hover {
+    color:white;
+    background-color: black;
+
+}
+
+main{
+    background-color: #d1e489;
+    flex-grow: 1;
+
+}
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff462;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table button{
+    background-color: #afcc48;
+    border-radius: 15px;
+    padding: 2px 20px;
+    margin-left: 15%;
+    font-weight: 500;
+}
+table button:hover{
+    border: 2px solid gray;
+    background-color: #d1e489 ;
+}
+form button{
+    background-color:#afcc48;
+    padding: 2px 15px;
+    margin-bottom: 2px;
+}
+form button:hover{
+    background-color: #d1e489;
+}
+h2 {
+    color: #333;
+    margin-top: 1%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 1.5%;
+}
+fieldset{
+    width: 48.3%;
+    border: 1px solid black;
+}
+.coluna {
+    width: 50%;
+  
+}
+ul{
+    margin-top: 2px;
+    margin-left: 15px;
+    list-style: none;
+}
+h3{
+    text-align: center;
+}
+summary{
+   cursor: pointer;
+    
+}

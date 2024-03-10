@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Mesa e Comanda - Shayder</title>
+    <link rel="stylesheet" href="../css/style-comandas.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo-mesaecomanda.png" alt="Logo">
+        </div>
+    <div class="links">
+        <a href="index.html">Projeto</a>
+        <a href="../html/mesas.html">Mesas</a>
+        <a href="../html/comandas.html" class="active-link">Comandas</a>
+    </div>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Comandas das Mesas</h2>
+        <section>
+            <details><summary>MESA 01</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td id="comanda1">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total1">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(1)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm1" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 1</h3>
+                    <form onsubmit="salvarComanda(1); return false;">
+                        <label for="novoItem1">Novo Item:</label>
+                        <select id="novoItem1" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 02</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td id="comanda2">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total2">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(2)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm2" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 2</h3>
+                    <form onsubmit="salvarComanda(2); return false;">
+                        <label for="novoItem2">Novo Item:</label>
+                        <select id="novoItem2" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 03</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">03</td>
+                            <td id="comanda3">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total3">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(3)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm3" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 3</h3>
+                    <form onsubmit="salvarComanda(3); return false;">
+                        <label for="novoItem3">Novo Item:</label>
+                        <select id="novoItem3" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 04</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">04</td>
+                            <td id="comanda4">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total4">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(4)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm4" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 04</h3>
+                    <form onsubmit="salvarComanda(4); return false;">
+                        <label for="novoItem4">Novo Item:</label>
+                        <select id="novoItem4" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 05</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">03</td>
+                            <td id="comanda5">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total5">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(5)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm5" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 05</h3>
+                    <form onsubmit="salvarComanda(5); return false;">
+                        <label for="novoItem5">Novo Item:</label>
+                        <select id="novoItem5" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 06</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">06</td>
+                            <td id="comanda6">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total6">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(6)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm6" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 06</h3>
+                    <form onsubmit="salvarComanda(6); return false;">
+                        <label for="novoItem6">Novo Item:</label>
+                        <select id="novoItem6" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 07</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">07</td>
+                            <td id="comanda7">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total7">20.00</td>
+                            <td>
+                                <button onclick="editarComanda(7)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm7" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 07</h3>
+                    <form onsubmit="salvarComanda(7); return false;">
+                        <label for="novoItem7">Novo Item:</label>
+                        <select id="novoItem7" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 08</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">08</td>
+                            <td id="comanda8">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total8">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(8)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm8" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 08</h3>
+                    <form onsubmit="salvarComanda(8); return false;">
+                        <label for="novoItem8">Novo Item:</label>
+                        <select id="novoItem8" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 09</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">09</td>
+                            <td id="comanda9">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total9">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(9)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm9" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 09</h3>
+                    <form onsubmit="salvarComanda(9); return false;">
+                        <label for="novoItem9">Novo Item:</label>
+                        <select id="novoItem9" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 10</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">10</td>
+                            <td id="comanda10">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total10">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(10)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm10" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 10</h3>
+                    <form onsubmit="salvarComanda(10); return false;">
+                        <label for="novoItem10">Novo Item:</label>
+                        <select id="novoItem10" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 11</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">11</td>
+                            <td id="comanda11">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total11">0.00</td>
+                            <td>
+                                <button onclick="editarComanda(11)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="editForm11" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 11</h3>
+                    <form onsubmit="salvarComanda(11); return false;">
+                        <label for="novoItem11">Novo Item:</label>
+                        <select id="novoItem11" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        <br>
+        <details><summary>MESA 12</summary>
+            <div class="coluna">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mesa</th>
+                            <th>Comanda</th>
+                            <th>Total</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">12</td>
+                            <td id="comanda12">
+                                <ul>
+                                </ul>
+                            </td>
+                            <td id="total12">20.00</td>
+                            <td>
+                                <button onclick="editarComanda(12)">Editar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="editForm12" class="edit-form">
+                    <fieldset>
+                    <h3>Editar Comanda da Mesa 12</h3>
+                    <form onsubmit="salvarComanda(12); return false;">
+                        <label for="novoItem12">Novo Item:</label>
+                        <select id="novoItem12" required>
+                            <option value="15.00">Prato 2 - R$ 15.00</option>
+                            <option value="5.00">Bebida 2 - R$ 5.00</option>
+                        </select>
+                        <button type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+                </div>
+            </div>
+        </details>
+        <br>
+        <hr>
+        </section>
+    </main>
+</body>
+</html>

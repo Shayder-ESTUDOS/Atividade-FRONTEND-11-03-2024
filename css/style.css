@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header{
+    background-color: #fff462;
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header .logo img {
+    height: 5rem;
+}
+
+.active-link {
+    text-decoration: none;
+    color:white ;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;  
+    border-radius: 0.25rem;  
+}
+
+header .links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.625rem 1.25rem ;
+    font-size: 1rem;
+    transition: .2s;
+    font-weight: 700;
+    border-radius: 0.25rem;  
+
+    
+}
+
+header .links a:hover {
+    color:white;
+    background-color: black;
+
+}
+
+main{
+    background-color: #d1e489;
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .right-desc{
+    max-width: 50vw;
+    padding: 25px;
+}
+.right-desc h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.397);
+}
+
+.right-desc p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.right-desc a {
+    
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700; 
+    padding: 12px 80px;   
+}
+    
+main .left-pic{
+   flex-grow: 1;
+    clip-path: polygon(85% 0, 100% 16%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    display: block;
+    height: 450px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+.left-pic li {
+    list-style: none;
+    position: absolute;
+}
+
+.left-pic img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.left-pic input {
+    display: none;
+}
+.left-pic label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+.left-pic li:nth-child(1) label {
+    left: 10px;
+}
+.left-pic li:nth-child(2) label {
+    left: 40px;
+}
+.left-pic li:nth-child(3) label {
+    left: 70px;
+}
+.left-pic img {
+    opacity: 0;
+    visibility: hidden;
+}
+.left-pic li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    transition:  1s ease-in;
+}
+
